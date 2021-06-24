@@ -1,0 +1,93 @@
+    @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    * {
+    font-family: 'Poppins';
+    }
+
+    html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px; 
+    color: rgb(0, 0, 0);
+    }
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    }
+
+    form {
+    position: relative;
+    width: 80%;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1)
+    }
+
+    .box {
+    padding: 40px;
+    }
+
+    .box input, .box textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    }
+
+
+    .box textarea {
+    resize: none;
+    }
+
+
+    button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    color: #fff;
+    transition: .2s;
+    }
+
+    button:hover {
+        background: linear-gradient(to right, #4d4d4d, #888888);
+        color: black;
+    }
+
+
+    @media (min-width: 1280px){
+            form {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 1279px){
+
+        * {
+            zoom: 125%;
+        }
+
+        form {
+        width: 100%;
+        }
+
+        h1 {
+            font-size: 300%;
+        }
+    }

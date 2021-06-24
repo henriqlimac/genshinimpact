@@ -1,0 +1,339 @@
+/* ----------- RESET  ----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ----------- Fontes personalizadas do site ----------- */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*  ----------- Scrollbar track  ----------- */
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0); 
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00aeff, #00d9ff);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #00aeff, #00d9ff);
+}
+
+/* ----------- Corpo / HTML / Container ----------- */
+
+body {
+    display: block;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-left: 10%;
+}
+
+/* ----------- Navbar/Menu ----------- */
+.navbar {
+    position: fixed;
+    background-color: black;
+    width: 10%;
+    height: 100%;
+}
+
+.menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.menu li a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    display: block;
+    color: rgb(250, 240, 237);
+    padding: 10px;
+    background-size: 500%;
+    background-position: 50%;
+    background-image: linear-gradient(
+    90deg
+, #ffffff 0%, #ffffff 20%, #ffffff 20%, #00000075 40%, #000000 40%, #000000 60%);
+    transition: .2s;
+}
+
+.menu li a:hover {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-size: 500%;
+    background-position: 0%;
+    background-image: linear-gradient(
+    90deg
+, #ffffff 0%, #ffffff 20%, #ffffff 20%, #000000 40%, #000000 40%, #000000 60%);
+}
+
+ul > img {
+    width: 100%;
+}
+
+/* ----------- IMGS ----------- */
+
+.paimon {
+    text-align: center;
+}
+
+.jean {
+    text-align: center;
+}
+
+.zhongli {
+    text-align: center;
+}
+
+.elements {
+    text-align: center;
+}
+
+.sucrosediluc {
+    text-align: center;
+}
+/* ----------- IMGS PT2 ----------- */
+
+.elements > img {
+    width: 25%;
+    border: 0;
+    border-radius: 0;
+    margin-top: 2%;
+}
+
+.paimon > img {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    width: 15%;
+}
+
+.jean > img {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    width: 16%;
+}
+
+.zhongli > img {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    width: 14%;
+}
+
+.sucrosediluc > img {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    width: 16%;
+}
+
+/* ----------- Sections ----------- */
+
+.first {
+    background-color: rgb(255, 255, 255); 
+}
+
+.second {
+    background-color: rgb(243, 243, 243); 
+}
+
+/* ----------- Elementos do site ----------- */
+
+h1 {
+    font-size: 250%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 2% 0;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1.5% 0;
+}
+
+p {
+    font-size: 110%;
+    text-align: justify;
+    text-indent: 50px;
+    color: rgb(0, 0, 0);
+    padding: 10px 10%;
+}
+
+h6 {
+    font-size: 80%;
+    text-align: center;
+    text-indent: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px 10%;
+}
+
+.frases{
+    font-size: 1.2em;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.2;
+    margin-bottom: 1.2%;
+    background: linear-gradient(to right, #002fff, #00ffc8);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.teyvat{
+    font-size: 1.2em;
+    color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.2;
+    margin-bottom: 1.2%;
+    background: linear-gradient(to right, #00140f, #001b1a);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+/* ----------- Footer ----------- */
+
+footer {
+    background-color: #000;
+    user-select: none;
+    padding: 25px;
+}
+
+footer p {
+    text-indent: 0;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+}
+
+/* ----------- Media / Responsivo ----------- */
+
+@media only screen and (max-width: 600px) {
+
+/* ----------- LARGURA DE 600X ----------- */
+
+/* ----------- Imagens ----------- */
+
+    .paimon > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 60%;
+    }
+    
+    .jean > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 60%;
+    }
+    
+    .zhongli > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 55%;
+    }
+
+    .elements > img {
+        width: 65%;
+        border: 0;
+        margin-top: 2%;
+    }
+
+    .sucrosediluc > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 55%;
+    }
+/* ----------- Menu ----------- */
+    i {
+        font-size: 150%;
+    }
+
+    span {
+        display: none;
+    }
+
+} 
+
+@media only screen and (max-width: 1360px) {
+
+/* ----------- LARGURA DE 1360PX ----------- */
+
+/* ----------- Imagens ----------- */
+
+    .paimon > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 25%;
+    }
+
+    .jean > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 25%;
+    }
+
+    .zhongli > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 21%;
+    }
+
+    .sucrosediluc > img {
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        width: 26%;
+    }
+
+/* ----------- Menu ----------- */
+
+    .menu li a {
+        font-size: 13px;
+    }
+
+    i {
+        font-size: 150%;
+    }
+
+    span {
+        display: none;
+    }
+}
